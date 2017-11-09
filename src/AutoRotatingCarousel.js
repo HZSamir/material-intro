@@ -204,7 +204,7 @@ export default class AutoRotatingCarousel extends Component {
               }))}
             </Carousel>
           </Paper>
-          <div style={landscape ? {minWidth: 300, maxWidth: 'calc(50% - 48px)', padding: 24, float: 'right'} : null}>
+          <div style={landscape ? {minWidth: 400, maxWidth: 'calc(50% - 48px)', padding: 24, float: 'right'} : null}>
             <div style={landscape ? style.footerLandscape : style.footer}>
               {this.props.label && <Button
                 raised

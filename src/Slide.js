@@ -66,7 +66,7 @@ const styles = {
       margin: 0
     },
     text: {
-      minWidth: 300,
+      minWidth: 400,
       maxWidth: 'calc(50% - 48px)',
       padding: '24px 24px 128px',
       flex: '0 1',
