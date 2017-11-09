@@ -40,7 +40,7 @@ const desktopStyles = {
     height: 48,
     position: 'absolute',
     top: 'calc((100% - 96px) / 2 + 24px)',
-    left: -96
+    left: -96,
     width: 48,
     height: 48,
     padding: 4
@@ -50,7 +50,7 @@ const desktopStyles = {
     height: 48,
     position: 'absolute',
     top: 'calc((100% - 96px) / 2 + 24px)',
-    right: -96
+    right: -96,
     width: 48,
     height: 48,
     padding: 4
