@@ -166,7 +166,7 @@ export default class AutoRotatingCarousel extends Component {
         <div style={{...style.content, ...this.props.contentStyle}}
           onClick={evt => evt.stopPropagation() || evt.preventDefault()}>
           <Paper
-            zDepth={this.props.mobile ? 0 : 1}
+            elevation={this.props.mobile ? 0 : 1}
             style={style.carouselWrapper}>
             <Carousel
               autoplay={this.props.open && this.props.autoplay}
@@ -201,26 +201,22 @@ export default class AutoRotatingCarousel extends Component {
           {!this.props.mobile && !this.props.hideArrows ? <div>
             <Paper
               style={style.arrowLeft}
-              circle
             >
               <IconButton
                 style={style.arrowIconButton}
-                iconStyle={style.arrowIcon}
+                //iconStyle={style.arrowIcon}
                 onClick={() => this.decreaseIndex()}
-                touch
               >
                 <ArrowBackIcon />
               </IconButton>
             </Paper>
             <Paper
               style={style.arrowRight}
-              circle
             >
               <IconButton
                 style={style.arrowIconButton}
-                iconStyle={style.arrowIcon}
+                //iconStyle={style.arrowIcon}
                 onClick={() => this.increaseIndex()}
-                touch
               >
                 <ArrowForwardIcon />
               </IconButton>
