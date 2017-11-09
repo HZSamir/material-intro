@@ -35,6 +35,26 @@ const desktopStyles = {
     height: 48,
     padding: 4
   },
+  arrowIconButtonLeft: {
+    width: 48,
+    height: 48,
+    position: 'absolute',
+    top: 'calc((100% - 96px) / 2 + 24px)',
+    left: -96
+    width: 48,
+    height: 48,
+    padding: 4
+  },
+  arrowIconButtonRight: {
+    width: 48,
+    height: 48,
+    position: 'absolute',
+    top: 'calc((100% - 96px) / 2 + 24px)',
+    right: -96
+    width: 48,
+    height: 48,
+    padding: 4
+  },
   arrowIcon: {
     color: grey[700]
   },
@@ -201,7 +221,7 @@ export default class AutoRotatingCarousel extends Component {
           {!this.props.mobile && !this.props.hideArrows ? <div>
 
               <IconButton
-                style={style.arrowIconButton}
+                style={style.arrowIconButtonLeft}
                 //iconStyle={style.arrowIcon}
                 onClick={() => this.decreaseIndex()}
               >
@@ -210,7 +230,7 @@ export default class AutoRotatingCarousel extends Component {
 
 
               <IconButton
-                style={style.arrowIconButton}
+                style={style.arrowIconButtonRight}
                 //iconStyle={style.arrowIcon}
                 onClick={() => this.increaseIndex()}
               >
