@@ -199,9 +199,7 @@ export default class AutoRotatingCarousel extends Component {
             </div>
           </div>
           {!this.props.mobile && !this.props.hideArrows ? <div>
-            <Paper
-              style={style.arrowLeft}
-            >
+
               <IconButton
                 style={style.arrowIconButton}
                 //iconStyle={style.arrowIcon}
@@ -209,10 +207,8 @@ export default class AutoRotatingCarousel extends Component {
               >
                 <ArrowBackIcon />
               </IconButton>
-            </Paper>
-            <Paper
-              style={style.arrowRight}
-            >
+
+
               <IconButton
                 style={style.arrowIconButton}
                 //iconStyle={style.arrowIcon}
@@ -220,7 +216,7 @@ export default class AutoRotatingCarousel extends Component {
               >
                 <ArrowForwardIcon />
               </IconButton>
-            </Paper>
+
           </div> : null
           }
         </div>
